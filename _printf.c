@@ -2,10 +2,10 @@
 int _printf(const char *format, ...)
 {
 	int i;
-char copy [4000];	
+	va_list in;	
 
 	while (format[i])
-	{
+	{	
 		i++;
 	}
 	write(1, format, i);

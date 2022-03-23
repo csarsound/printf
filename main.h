@@ -9,8 +9,7 @@
 /*PROTOTYPES*/
 
 int _printf(const char *format, ...);
-char *conv_c(void*);
-char *conv_s(void*);
-char *conv_%(void*);
+char *conv_c (void *,va_list in);
+
 
 #endif/*MAIN_TYPE*/
