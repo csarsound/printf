@@ -1,0 +1,11 @@
+#include "main.h"
+
+
+char *conv_c (void)
+{
+int i
+
+while (format[i])
+{
+i++
+}
