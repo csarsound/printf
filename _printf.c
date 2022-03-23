@@ -15,5 +15,3 @@ int _printf(const char *format, ...)
 	}
 	write(1, buff, i);
 }
-
-/* Hola */
