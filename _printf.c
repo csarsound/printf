@@ -2,15 +2,16 @@
 int _printf(const char *format, ...)
 {
 	int i;
-	va_list in;	
+	va_list in;
+	char buff [2000];	
 
 	while (format[i])
 	{
-	if(i == '%' && i == 's')
+	if(format[i] == '%' && format[i + 1] == 's')
 	{
-		_printf("String[%s]\n","hola");
+		char *conv_s (void, va_list in);
 	}	
 		i++;
 	}
-	write(1, format, i);
+	write(1, buff, i);
 }
