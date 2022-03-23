@@ -2,6 +2,7 @@
 int _printf(const char *format, ...)
 {
 	int i;
+char copy [4000];	
 
 	while (format[i])
 	{
