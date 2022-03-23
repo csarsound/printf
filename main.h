@@ -10,6 +10,7 @@
 
 int _printf(const char *format, ...);
 char *conv_c (void *,va_list in);
+char *conv_s (void *,va_list in);
 
 
 #endif/*MAIN_TYPE*/
