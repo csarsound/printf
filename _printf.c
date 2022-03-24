@@ -9,7 +9,7 @@ int _printf(const char *format, ...)
 	{
 	if(format[i] == '%' && format[i + 1] == 's')
 	{
-		char *conv_s (void, va_list in);
+		char conv_s(va_list in);
 	}	
 		i++;
 	}
