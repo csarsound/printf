@@ -1,14 +1,14 @@
 #include "main.h"
-char *searchFun(const char *format, va_list ptr)
+char (*searchFun(const char *format))(va_list ptr)
 {
   int x;
   option choice[] = 
   {
-    {"c", funC},
-    {"s", funS},
-    {"%", funP},
-    {"d", funD},
-    {"i", funI},
+    {"c", conv_c},
+    {"s", conv_s},
+    {"%", conv_%},
+    {"d", conv_d},
+    {"i", conv_i},
     {NULL, NULL}
   };
 
