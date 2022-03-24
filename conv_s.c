@@ -13,5 +13,5 @@ char *conv_s (void *, va_list in)
 		_print(in[i]);
 	}
 	
-	return (i);s
+	return (i);
 }	
