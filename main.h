@@ -9,19 +9,27 @@
 /*PROTOTYPES*/
 
 int _printf(const char *format, ...);
+/*write a string*/
 int conv_s(va_list strings);
+/*write a character*/
 int conv_c(va_list chars);
+/*write character to stdout*/
 int goWrite(char w);
 void copy(char *in, const char *out);
 int strle(char *out);
 int (*op_struct(const char *st, int))(va_list);
 
 /*STRUCTURE*/
+/**
+ * struct options - structure
+ * @specifier: pointer arguments
+ * @f: pointer function
+ */
 
 typedef struct options
 {
-    char *specifier;
-    int (*f)(va_list);
+char *specifier;
+int (*f)(va_list);
 } option;
 
 

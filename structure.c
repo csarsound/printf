@@ -7,21 +7,21 @@
  */
 int (*op_struct(const char *st, int t))(va_list)
 {
-	option letters[] = {
-		{"s", conv_s},
-		{"c", conv_c},
-		{NULL, NULL}
-		};
+option letters[] = {
+{"s", conv_s},
+{"c", conv_c},
+{NULL, NULL}
+};
 
-	int i;
+int i;
 
-	for (i = 0; letters[i].specifier != NULL; i++)
-	{
-		if (letters[i].specifier[0] == st[t])
-		{
-			return (letters[i].f);
-		}
-	}
+for (i = 0; letters[i].specifier != NULL; i++)
+{
+if (letters[i].specifier[0] == st[t])
+{
+return (letters[i].f);
+}
+}
 
-	return (0);
+return (0);
 }
