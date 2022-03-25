@@ -1,5 +1,11 @@
 #include "main.h"
-
+/**
+ * @string - character string to traverse
+ * @letters:  Get the information of the structure to apply it
+ * @i: loop through the string
+ * conv_s - converts the string depending on the character type
+ * conv_c - convert a single character
+*/
 int conv_s(va_list letters)
 {
     char *string = va_arg(letters, char *);
