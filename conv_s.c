@@ -1,17 +1,26 @@
 #include "main.h"
 
-
-char *conv_s (void *, va_list in)
+int conv_s(va_list letters)
 {
+    char *string = va_arg(letters, char *);
 	int i;
 	
-	if (in == NULL)
-	in = "(Null)";
+	if (string == NULL)
+	string = "(Null)";
 	
-	for (i = 0, in[i], i++)
+	for (i = 0; string[i]; i++)
 	{
-		_print(in[i]);
+		goWrite(string[i]);
 	}
 	
 	return (i);
-}	
+}
+
+int conv_c(va_list letters)
+{
+	
+    char ch = va_arg(letters, int);
+    
+    goWrite(ch);
+    return (1);
+}

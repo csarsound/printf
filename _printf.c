@@ -1,17 +1,43 @@
 #include "main.h"
 int _printf(const char *format, ...)
 {
-	int i;
-	va_list in;
-	char buff [2000];	
-
-	while (format[i])
+    int i = 0;
+	int j = 0;
+	va_list init;
+	char buff [2000];
+	
+	if (*format != '\0')
+	copy(buff, format);
+	
+	va_start(init, format);
+	
+	
+	for (i= 0; buff[i] != '\0'; i++, j++)
 	{
-	if(format[i] == '%' && format[i + 1] == 's')
-	{
-		char conv_s(va_list in);
-	}	
-		i++;
+	    if (format[i] == '%')
+	    {
+	        i++;
+	        if (buff[i] == '%')
+	        {
+	            goWrite(buff[i]);
+	            
+	        }
+	        else
+	        {
+	            if (op_struct(buff, (i)) == NULL)
+	            {
+	                goWrite(buff[i]);
+	                
+	            }
+	            else
+	            {
+	                j--;
+	                j += (op_struct(buff, (i))(init));
+	            }
+	        }
+	    }
+	    else
+	   goWrite(buff[i]);
 	}
-	write(1, buff, i);
+	return (j);
 }
