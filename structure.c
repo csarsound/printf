@@ -3,16 +3,15 @@
  * op_struct - Structure of functions.
  * @st: Pointer to function.
  * @t: Compare number of characters.
- * Return: int(*)(va_list) 
+ * Return: int(*)(va_list)
  */
 int (*op_struct(const char *st, int t))(va_list)
 {
-	option letters[] = 
-	{
+	option letters[] = {
 		{"s", conv_s},
 		{"c", conv_c},
 		{NULL, NULL}
-	};
+		};
 
 	int i;
 
