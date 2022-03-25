@@ -1,4 +1,10 @@
 #include "main.h"
+
+/**
+ * * _printf - main function
+ * @format Enter data string of the main.c
+ * Return: along of string 
+ */
 int _printf(const char *format, ...)
 {
     int i = 0;
@@ -36,8 +42,8 @@ int _printf(const char *format, ...)
 	            }
 	        }
 	    }
-	    else
-	   goWrite(buff[i]);
+		else
+		goWrite(buff[i]);
 	}
 	return (j);
 }
