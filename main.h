@@ -13,6 +13,9 @@ int _printf(const char *format, ...);
 int conv_s(va_list strings);
 /*write a character*/
 int conv_c(va_list chars);
+/**/
+int conv_d(int n, va_list letters);
+
 /*write character to stdout*/
 int goWrite(char w);
 void copy(char *in, const char *out);
