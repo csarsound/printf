@@ -1,0 +1,44 @@
+.TH _printf "25-03-2022" "ver. 1.0" "_printf man page"
+
+.SH NAME
+.B _printf - Function that produces output according to a format.
+
+.SH SYNOPSIS
+
+.B #include "main.h"
+
+.B _printf(const char *format, ...);
+
+.B printf("%c", variable contains char);
+
+.SH DESCRIPTION
+.B The printf() function formats and prints a series of characters and values to the standard output stream stdout. 
+.P
+Format specifications, beginning with a percent sign (%), determine the output format for any argument-list following the format-string.
+.P
+The format-string is read left to right.
+.P 
+When the first format specification is found, the value of the first argument after the format-string is converted and printed according to the format specification.
+.P
+The second format specification causes the second argument after the format-string to be converted and printed, and so on through the end of the format-string.
+.P
+If there are more arguments than there are format specifications, the extra arguments are evaluated and ignored.
+
+.SH Flags
+.P
+%c Prints a character
+.P
+%s Prints a string
+.P
+%% Prints a percentage sign
+.P
+%d Prints a integer
+.P
+%i Prints a integer
+.P
+
+.SH SEE ALSO
+.B man printf
+
+.SH AUTHORS
+Cesar Martinez, Laura Socarras, Christian Oviedo
