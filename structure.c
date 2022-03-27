@@ -10,6 +10,8 @@ int (*op_struct(const char *st, int t))(va_list)
 option letters[] = {
 {"s", conv_s},
 {"c", conv_c},
+{"d", conv_d},
+{"i", conv_d},
 {NULL, NULL}
 };
 
