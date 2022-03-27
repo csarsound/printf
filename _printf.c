@@ -31,6 +31,7 @@ else
 {
 if (op_struct(buff, (i)) == NULL)
 {
+goWrite(buff[i - 1]);
 goWrite(buff[i]);
 }
 else
