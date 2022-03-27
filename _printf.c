@@ -23,6 +23,7 @@ if (format[i] == '%')
 i++;
 if (buff[i] == '%')
 {
+goWrite(buff[i - 1]);
 goWrite(buff[i]);
 }
 else
