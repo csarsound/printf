@@ -17,6 +17,9 @@ copy(buff, format);
 
 va_start(init, format);
 
+if (buff[0] == '%' && buff[1] == '\0')
+		return (-1);
+
 for (i = 0; buff[i] != '\0'; i++, j++)
 {
 if (format[i] == '%')
