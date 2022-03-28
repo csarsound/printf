@@ -25,5 +25,5 @@ return (letters[i].f);
 }
 }
 
-return (0);
+return (NULL);
 }
