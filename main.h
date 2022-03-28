@@ -18,7 +18,6 @@ int conv_c(va_list chars);
 /*write character to stdout*/
 int goWrite(char w);
 void copy(char *in, const char *out);
-int strle(char *out);
 int (*op_struct(const char *st, int))(va_list);
 int numb(unsigned int n);
 int conv_d(va_list letters);
