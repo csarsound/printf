@@ -19,7 +19,7 @@ int reduce(unsigned int n)
 		goWrite(j + '0');
 		return (i);
 	}
-	return (NULL);
+	return (0);
 }
 
 /**
