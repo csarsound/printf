@@ -48,5 +48,5 @@ int conv_d(va_list letters)
 		return (j + reduce(k));
 
 	goWrite(k + '0');
-	return (1 + j);
+	return (j);
 }
