@@ -28,5 +28,5 @@ int conv_c(va_list letters)
 char ch = va_arg(letters, int);
 
 goWrite(ch);
-return (1);
+return (0);
 }
