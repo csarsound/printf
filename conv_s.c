@@ -10,7 +10,7 @@ char *string = va_arg(letters, char *);
 int i;
 
 if (string == NULL)
-string = "(Null)";
+string = "(null)";
 
 for (i = 0; string[i]; i++)
 {
