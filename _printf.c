@@ -42,5 +42,6 @@ j += (op_struct(buff, (i))(init));
 else
 goWrite(buff[i]);
 }
+va_end(init);
 return (j);
 }
